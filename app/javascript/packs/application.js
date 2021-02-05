@@ -8,6 +8,11 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
 
+//= require_tree ../../../vendor/assets/javascripts/.
+//= require_tree ../../../vendor/assets/stylesheets/.
+//= require_tree ../../../vendor/assets/images/.
+//= require_tree .
+
 import "css/site";
 
 import "bootstrap";

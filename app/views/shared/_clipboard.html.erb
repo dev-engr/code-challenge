@@ -1,0 +1,33 @@
+<%= javascript_include_tag "clipboard.min" %>
+<%= javascript_include_tag "jquery.min" %>
+<%= javascript_include_tag "bootstrap.min" %>
+<%= stylesheet_link_tag 'styles' %>
+
+<script>
+// Tooltip
+$('button').tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+});
+function setTooltip(message) {
+    $('button').tooltip('hide')
+        .attr('data-original-title', message)
+        .tooltip('show');
+}
+function hideTooltip() {
+    setTimeout(function() {
+        $('button').tooltip('hide');
+    }, 1000);
+}
+
+// Clipboard
+var clipboard = new ClipboardJS('button');
+clipboard.on('success', function(e) {
+    setTooltip('Copied!');
+    hideTooltip();
+});
+clipboard.on('error', function(e) {
+    setTooltip('Failed!');
+    hideTooltip();
+});
+</script>

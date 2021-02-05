@@ -1,0 +1,4 @@
+.tooltip.in {
+    opacity: .9;
+    filter: alpha(opacity=90)
+}

@@ -21,14 +21,17 @@
     <div class="col-12 col-lg-4 pt-lg-5">
       <h4>Contact</h4>
       <div class="form-group" data-controller="clipboard">
-        <p><%= @customer.phone %><br>
-          <input type="hidden" value="<%= @customer.phone %>" data-target="clipboard.source"></input>
-          <a data-action="clipboard#copy" class="clipboard-button pointer text-decoration-none text-dark"> copy</a>
-          <a data-target="clipboard.notice" class="clipboard-button pointer d-none text-decoration-none text-dark" class="d-none"> copied</a>
-        </p>
+        <input id="phone" value="<%= @customer.phone %>" readonly></input>
+        <span class="input-group-button">
+              <button class="btn" data-clipboard-text="<%= @customer.phone %>">
+                <img class="clippy" src="<%=asset_path('clippy.svg')%>" width="13" alt="Copy to clipboard">
+              </button>
+          </span>
       </div>
     </div>
   </div>
+
+  <%= render 'shared/clipboard' %>
 
   <div class="bg-success text-white text-center py-3">
     <p class="lead"><%= @customer.phone %> — <%= @customer.email %></p>

@@ -26,16 +26,19 @@
         <p><%= service %></p>
       <% end %>
       <h4>Contact</h4>
-        <div class="form-group" data-controller="clipboard">
-          <p><%= @company.phone %><br>
-          <input type="hidden" value="<%= @company.phone %>" data-target="clipboard.source"></input>
-          <a data-action="clipboard#copy" class="clipboard-button pointer text-decoration-none text-dark"> copy</a>
-          <a data-target="clipboard.notice" class="clipboard-button pointer d-none text-decoration-none text-dark" class="d-none"> copied</a>
-          </p>
-        </div>
+      <div class="form-group" data-controller="clipboard">
+        <input id="phone" value="<%= @company.phone %>" readonly></input>
+        <span class="input-group-button">
+              <button class="btn" data-clipboard-text="<%= @company.phone %>">
+                <img class="clippy" src="<%=asset_path('clippy.svg')%>" width="13" alt="Copy to clipboard">
+              </button>
+          </span>
+      </div>
       <a href="<%= company_customers_path(@company) %>">View Customers</a>
     </div>
   </div>
+
+  <%= render 'shared/clipboard' %>
 
   <div class="bg-success text-white text-center py-3">
     <p class="lead"><%= @company.phone %> — <%= @company.email %></p>
