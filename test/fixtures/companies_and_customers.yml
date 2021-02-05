@@ -1,0 +1,30 @@
+one:
+  company: hometown_painting
+  customer: cannon_tools_co
+two:
+  company: hometown_painting
+  customer: west_life_insurance
+three:
+  company: hometown_painting
+  customer: morrison_home_federation
+four:
+  company: hometown_painting
+  customer: bay_bank_automobiles
+five:
+  company: wolf_painting
+  customer: tribune_motors
+six:
+  company: wolf_painting
+  customer: reynolds_shipping
+seven:
+  company: wolf_painting
+  customer: avery_printing
+eight:
+  company: thompson_patining
+  customer: universal_airworks
+nine:
+  company: thompson_patining
+  customer: brothers_gypsum_inc
+ten:
+  company: armstrong_painting
+  customer: delux_cosmetics

@@ -1,0 +1,7 @@
+<div class="container py-5">
+  <h3>Edit Customer</h3>
+  <%= link_to "< Customer", company_customer_path(@company) %>
+  <%= form_for @customer, url: company_customer_path(@company) do |f| %>
+    <%= render "form", f: f %>
+  <% end %>
+</div>
