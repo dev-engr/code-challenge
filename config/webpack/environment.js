@@ -7,6 +7,7 @@ environment.plugins.append(
     $: "jquery",
     jQuery: "jquery",
     Rails: "@rails/ujs",
+    ClipboardJS: 'clipboard'
   })
 );
 
