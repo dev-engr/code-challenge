@@ -16,3 +16,10 @@
 
 @import "bootstrap";
 @import "trix/dist/trix";
+
+
+*= require bootstrap
+
+*= require_tree .
+
+*= require_self

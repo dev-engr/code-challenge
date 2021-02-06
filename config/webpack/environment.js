@@ -6,7 +6,9 @@ environment.plugins.append(
   new webpack.ProvidePlugin({
     $: "jquery",
     jQuery: "jquery",
+    bootstrap: "bootstrap",
     Rails: "@rails/ujs",
+    ClipboardJS: ['clipboard']
   })
 );
 
