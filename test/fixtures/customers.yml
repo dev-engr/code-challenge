@@ -1,0 +1,59 @@
+cannon_tools_co:
+  name: Cannon Tools Co
+  zip_code: "37201"
+  phone: "555-808-8888"
+  email: "connect@cannon_tools.com"
+
+west_life_insurance:
+  name: West Life Insurance
+  zip_code: "30301"
+  phone: "555-812-1234"
+  email: "someone@west_life_insurance.co"
+
+morrison_home_federation:
+  name: Morrison Home Federation
+  zip_code: "93003"
+  phone: "555-112-1111"
+  email: "admin@morrison_home_federation.com"
+
+bay_bank_automobiles:
+  name: Bay Bank Automobiles
+  zip_code: "31201"
+  phone: "555-000-8902"
+  email: "hello@bay_bank_automobiles.co"
+
+tribune_motors:
+  name: Tribune Motors
+  zip_code: "31223"
+  phone: "555-001-1243"
+  email: "hello@tribune_motors.bz"
+
+reynolds_shipping:
+  name: Reynolds Shipping
+  zip_code: "31232"
+  phone: "555-001-4321"
+  email: "hi@reynolds_shipping.org"
+
+avery_printing:
+  name: Avery Printing
+  zip_code: "31221"
+  phone: "555-112-3999"
+  email: "connect@avery_printing.co"
+
+universal_airworks:
+  name: Universal Airworks
+  zip_code: "31232"
+  phone: "555-019-1231"
+  email: "hello@universal_airworks.co"
+
+brothers_gypsum_inc:
+  name: Brothers Gypsum Inc
+  zip_code: "30301"
+  phone: "555-812-8871"
+  email: "hello@brothers_gypsum.co"
+
+delux_cosmetics:
+  name: Delux Cosmetics
+  zip_code: "30312"
+  phone: "555-342-1188"
+  email: "meet@delux_cosmetics.co"

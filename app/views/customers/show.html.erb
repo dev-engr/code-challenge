@@ -1,47 +1,39 @@
 <div class="container py-5">
-  <h3>Company</h3>
+  <h3><%= @company.name %> | Customers | <%= @customer.name %></h3>
   <div class="row">
     <div class="col">
-      <%= link_to "< Companies", companies_path %>
+      <%= link_to "< Customers", company_customers_path(company_id: @company) %>
     </div>
     <div class="col text-right">
-      <%= link_to "Edit", edit_company_path %>
+      <%= link_to "Edit", edit_company_customer_path(company_id: @company, id: @customer.id) %>
     </div>
   </div>
   <div class="bg-success">
     <div class="container p-5 text-white">
-      <h1><%= @company.name %></h1>
-      <h3><mark>City, State</mark></h3>
-      <pre><mark>☝️ This is what needs to be updated. Examples: Atlanta, GA or Nashville, TN</mark></pre>
+      <h1><%= @customer.name %></h1>
     </div>
   </div>
 
   <div class="row bg-light">
     <div class="col-12 col-lg-8 p-lg-5 pt-4">
-      <%= @company.description %>
+      <%= @customer.description %>
     </div>
     <div class="col-12 col-lg-4 pt-lg-5">
-      <h4>Services</h4>
-      <% @company.services.reject(&:blank?).each do |service| %>
-        <p><%= service %></p>
-      <% end %>
       <h4>Contact</h4>
       <div class="form-group" data-controller="clipboard">
-        <input id="phone" value="<%= @company.phone %>" readonly></input>
+        <input id="phone" value="<%= @customer.phone %>" readonly></input>
         <span class="input-group-button">
-              <button class="btn" data-clipboard-text="<%= @company.phone %>">
+              <button class="btn" data-clipboard-text="<%= @customer.phone %>">
                 <img class="clippy" src="<%=asset_path('clippy.svg')%>" width="13" alt="Copy to clipboard">
               </button>
           </span>
       </div>
-      <a href="<%= company_customers_path(@company) %>">View Customers</a>
     </div>
   </div>
 
   <%= javascript_pack_tag 'clipboard' %>
 
-
   <div class="bg-success text-white text-center py-3">
-    <p class="lead"><%= @company.phone %> — <%= @company.email %></p>
+    <p class="lead"><%= @customer.phone %> — <%= @customer.email %></p>
   </div>
 </div>

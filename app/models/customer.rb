@@ -1,6 +1,5 @@
-class Company < ApplicationRecord
+class Customer < ApplicationRecord
   has_many :companies_and_customers
-  has_many :customers, through: :companies_and_customers
 
   validates :name, :zip_code, :phone, :email, presence: true
 

@@ -15,6 +15,8 @@ import "bootstrap";
 require("trix");
 require("@rails/actiontext");
 
+require("packs/clipboard");
+
 import { Application } from "stimulus";
 import { definitionsFromContext } from "stimulus/webpack-helpers";
 
